@@ -4,3 +4,39 @@ html{
 *, ::after, ::before{
 	box-sizing: inherit;
 }
+.body{
+    background-color:rgb(230, 227, 227);
+}
+.form{
+    margin: 15px auto;
+    min-width: 260px;
+    max-width: 600px;
+
+}
+.form__fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border: none;
+    
+
+}
+.form__paragraph{
+   margin: 10px;
+   font-weight:bold;
+font-size: 30px;
+}
+.form__button{
+    border: none;
+    background-color: teal;
+    color: white;
+}
+.form__span{
+    
+    font-weight: bold;
+}
+.form__label{
+    width: 100%;
+}
