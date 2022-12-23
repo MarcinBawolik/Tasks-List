@@ -1,0 +1,66 @@
+.form{
+    margin: 15px auto;
+    min-width: 260px;
+    max-width: 600px;
+    display: grid;
+    grid-template-areas:
+    "hd hd hd"
+    "mn mn mn"
+    "bt bt bt";
+
+}
+.form__fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border: none;    
+}
+.form__fieldset--top{
+grid-area: mn ;
+display: grid;
+grid-template-areas: 
+"tp tp tp tp tp tp"
+"md md md md md as";
+
+}
+.form__span--main{
+grid-area: tp;
+}
+.form__label{
+    grid-area: md ;
+    padding-top: 15px;
+    padding-right: 15px;
+    
+}
+.form__button{
+    border: none;
+    background-color: teal;
+    color: white;
+    grid-area: as ;
+    margin-top: 15px;
+    max-width: 100px;
+   
+    
+}
+.form__fieldset--bottom{
+    grid-area: bt;
+}
+.form__paragraph{
+   margin: 10px;
+   font-weight:bold;
+font-size: 30px;
+}
+
+.form__span{
+    
+    font-weight: bold;
+}
+.form__input{
+   width: 100%;
+   padding: 5px
+   
+
+}
+
