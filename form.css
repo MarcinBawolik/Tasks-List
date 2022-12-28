@@ -33,6 +33,20 @@
 
 
 }
+.form__fieldset--bottom{
+    display: grid;
+    grid-template-areas: 
+    "tp tp tp"
+    "md md md"
+    ;
+}
+.form__span--list{
+    grid-area: tp;
+}
+.form__unorderedList{
+    grid-area: md;
+}
+
 
 .form__span--main {
     grid-area: tp;
@@ -51,9 +65,10 @@
     color: white;
     grid-area: as;
     margin-top: 15px;
-
-
-
+}
+.form__span {
+    font-size: larger;
+    font-weight: bold;
 }
 
 .form__fieldset--bottom {
@@ -64,11 +79,6 @@
     margin: 10px;
     font-weight: bold;
     font-size: 30px;
-}
-
-.form__span {
-    font-size: larger;
-    font-weight: bold;
 }
 
 .form__input {
