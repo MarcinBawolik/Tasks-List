@@ -10,3 +10,25 @@
 .list__item--done{
 	text-decoration: line-through ;
 }
+.button__done {
+    background-color: rgb(29, 179, 29);
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+.button__done:hover{
+  background-color: rgb(40, 202, 40);
+}
+
+.button__remove {
+    background-color: rgb(219, 38, 38);
+    border: none;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button__remove:hover{
+    background-color:rgb(250, 56, 56) ;
+}
