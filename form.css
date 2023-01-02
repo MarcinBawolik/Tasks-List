@@ -9,11 +9,6 @@
         "mn mn mn"
         "bt bt bt";
 }
-@media (max-width: 767px) {
-    .form {
-        width:100%
-    }
-}
 
 .form__fieldset {
     display: flex;
@@ -27,61 +22,42 @@
 .form__fieldset--top {
     grid-area: mn;
     display: grid;
-    grid-template-areas:
-        "tp tp tp tp "
-        "md md md as";
-
-
-}
-.form__fieldset--bottom{
-    display: grid;
     grid-template-areas: 
-    "tp tp tp"
-    "md md md"
-    ;
+    "hd hd hd"
+    "mn mn as";
+    
 }
-.form__span--list{
-    grid-area: tp;
+.form__header--top{
+    grid-area: hd;
 }
-.form__unorderedList{
-    grid-area: md;
-}
-
-
-.form__span--main {
-    grid-area: tp;
-}
-
-.form__label {
-    grid-area: md;
-    padding-top: 15px;
-    padding-right: 15px;
+.form__input {
+    grid-area: mn;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(230, 227, 227);
+    
 
 }
-
 .form__button {
+   grid-area: as;
     border: none;
     background-color: teal;
-    color: white;
-    grid-area: as;
-    margin-top: 15px;
+    color: white;   
 }
-.form__span {
-    font-size: larger;
-    font-weight: bold;
+
+.form__fieldset--bottom{
+    display: grid;
 }
 
 .form__fieldset--bottom {
     grid-area: bt;
 }
 
-.form__paragraph {
-    margin: 10px;
-    font-weight: bold;
-    font-size: 30px;
+.form__header {
+    border-bottom: solid rgb(230, 227, 227) 1px;
+}
+.form__header--main{
+    grid-area: hd;
+    margin-left: 10px;
 }
 
-.form__input {
-    width: 100%;
-    padding: 5px
-}
