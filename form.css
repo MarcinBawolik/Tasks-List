@@ -10,6 +10,15 @@
         "bt bt bt";
 }
 
+@media (max-width: 767px) {
+    .form{
+        grid-template-columns: 1fr;
+    }
+    .form__fieldset--top{
+        grid-template-columns: 1fr;
+    }
+}
+
 .form__fieldset {
     margin: 10px;
     padding: 20px;
@@ -44,15 +53,14 @@
     border: none;
     background-color: teal;
     color: white;
+    margin-left: 20px;
 }
 
 .form__fieldset--bottom {
     display: grid;
-}
-
-.form__fieldset--bottom {
     grid-area: bt;
 }
+
 
 .form__header {
     border-bottom: solid rgb(230, 227, 227) 1px;
@@ -61,4 +69,10 @@
 .form__header--main {
     grid-area: hd;
     margin-left: 10px;
+}
+
+
+.form__unorderedList {
+    list-style: none;
+    padding-inline-start: 0px;
 }
