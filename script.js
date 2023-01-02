@@ -13,7 +13,6 @@
         tasks.push({
             content: newTaskContent,
         });
-
         render();
     }
     const removeTask = (taskIndex) => {
@@ -26,7 +25,7 @@
     }
 
     const bindEvents = () => {
-        const removeButtons = document.querySelectorAll(".js-remove");
+         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, taskIndex) => {
             removeButton.addEventListener("click", () => {
@@ -50,12 +49,20 @@
 
         for (const task of tasks) {
             htmlString += `
-                <li
-                 ${task.done ? "style=\"text-decoration: line-through\"" : ""}
+                <li class="list__item"
+                 
                  >
-                 <button class="js-done">zrobione?</button>
-                 <button class="js-remove">usuń</button>
+                 
+                 
+                <div class="tasksConteiner">
+                 <button class="button__done js-done">
+                ${task.done ? "✔️" : ""}
+                </button>
+                <span class="${task.done ? " list__item--done" : ""}">
                 ${task.content}
+                </span>
+                <button class="button__remove js-remove">🗑️</button>
+              </div>
                 </li>
                 `;
         }
