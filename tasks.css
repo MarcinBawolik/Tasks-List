@@ -1,0 +1,12 @@
+.tasksConteiner{
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-gap: 10px;
+	margin-left: 5px;
+	border-bottom: solid rgb(230, 227, 227) 1px;
+	padding: 10px;
+	align-items: center;
+}
+.list__item--done{
+	text-decoration: line-through ;
+}
