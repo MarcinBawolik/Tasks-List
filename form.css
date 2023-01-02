@@ -11,8 +11,6 @@
 }
 
 .form__fieldset {
-    display: flex;
-    flex-wrap: wrap;
     margin: 10px;
     padding: 20px;
     background-color: white;
@@ -22,30 +20,33 @@
 .form__fieldset--top {
     grid-area: mn;
     display: grid;
-    grid-template-areas: 
-    "hd hd hd"
-    "mn mn as";
-    
+    grid-template-areas:
+        "hd hd hd"
+        "mn mn as";
+
 }
-.form__header--top{
+
+.form__header--top {
     grid-area: hd;
 }
+
 .form__input {
     grid-area: mn;
     width: 100%;
     padding: 5px;
     border: 1px solid rgb(230, 227, 227);
-    
+
 
 }
+
 .form__button {
-   grid-area: as;
+    grid-area: as;
     border: none;
     background-color: teal;
-    color: white;   
+    color: white;
 }
 
-.form__fieldset--bottom{
+.form__fieldset--bottom {
     display: grid;
 }
 
@@ -56,8 +57,8 @@
 .form__header {
     border-bottom: solid rgb(230, 227, 227) 1px;
 }
-.form__header--main{
+
+.form__header--main {
     grid-area: hd;
     margin-left: 10px;
 }
-
