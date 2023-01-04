@@ -1,23 +1,31 @@
-.tasksConteiner{
-	display: grid;
-	grid-template-columns: auto 1fr auto;
-	grid-gap: 10px;
-	margin-left: 5px;
-	border-bottom: solid rgb(230, 227, 227) 1px;
-	padding: 10px;
-	align-items: center;
+.tasks {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
-.list__item--done{
-	text-decoration: line-through ;
+
+.tasks__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    border-bottom: solid rgb(230, 227, 227) 1px;
+    padding: 10px;
+    align-items: center;
 }
+
+.tasks__item--done {
+    text-decoration: line-through;
+}
+
 .button__done {
     background-color: rgb(29, 179, 29);
     border: none;
     height: 30px;
     width: 30px;
 }
-.button__done:hover{
-  background-color: rgb(40, 202, 40);
+
+.button__done:hover {
+    background-color: rgb(40, 202, 40);
 }
 
 .button__remove {
@@ -29,6 +37,7 @@
     align-items: center;
     justify-content: center;
 }
-.button__remove:hover{
-    background-color:rgb(250, 56, 56) ;
+
+.button__remove:hover {
+    background-color: rgb(250, 56, 56);
 }
