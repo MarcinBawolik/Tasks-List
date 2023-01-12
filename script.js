@@ -2,11 +2,13 @@
     const tasks = [
        
     ];
+    
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
-        render();
+        tasks = [
+            ...tasks,
+            {content: newTaskContent},
+            ];
+            render()
     }
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
