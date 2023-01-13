@@ -9,7 +9,45 @@
     font-size: 20px;
     padding: 20px;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
-.section__conteiner{
-    padding:20px;
+
+
+
+
+
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+.section__conteiner {
+    padding: 20px;
+}
+
+.section__header--buttons {
+    border: none;
+    background-color: transparent;
+    color: teal;
+
+}
+
+;
+
+.section__header--buttons:hover {
+    border: none;
+}
+
+.section__header--conteiner {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid rgb(230, 227, 227) 1px;
 }
