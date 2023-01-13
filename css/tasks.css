@@ -43,3 +43,6 @@
 .button__remove:hover {
     background-color: rgb(250, 56, 56);
 }
+.tasks__item--hidden{
+    display: none;
+}
