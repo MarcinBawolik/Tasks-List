@@ -18,24 +18,6 @@
 .section__conteiner {
     padding: 20px;
 }
-
-.section__header--buttons {
-    border: none;
-    background-color: transparent;
-    color: hsl(180, 100%, 25%);
-    transition: 0.3s;
-    display: flex;
-
-}
-
-;
-
-.section__header--buttons:hover {
-    color: hsl(180, 100%, 35%); ;
-}
-.section__header--buttons:disabled{
-    color: #ccc;
-}
 .section__header--conteiner {
     display: grid;
     grid-template-columns: auto auto;
@@ -46,16 +28,6 @@
 @media (max-width: 767px) {
     .section__header--conteiner {
         grid-template-columns: 1fr;
-
-    }
-}
-@media (max-width: 767px) {
-    .section__header--buttons {
-    flex-basis: 100%;
-    margin: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 
     }
 }
